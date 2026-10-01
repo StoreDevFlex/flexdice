@@ -2,6 +2,9 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
+    <!-- GOOGLE DOĞRULAMA KODUNU AŞAĞIDAKİ ALANA YAPIŞTIR -->
+    <meta name="google-site-verification" content="BURAYA_GOOGLE_KODUNU_YAPIŞTIR" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>FLEX DICE</title>
     <style>
@@ -229,7 +232,6 @@
             border-radius: 50%;
         }
 
-        /* Zar altındaki renk etiketlerinin canlı renkli stilleri */
         .color-label {
             font-size: 11px;
             font-weight: 800;
@@ -985,7 +987,6 @@
                         const label = w.querySelector('.color-label');
                         dice.classList.remove('dice-shake');
 
-                        // Bir renk en fazla 2 kere çıkabilir kuralı:
                         let availableForThisDice = allowedColors.filter(c => (colorCounts[c.name] || 0) < 2);
                         if (availableForThisDice.length === 0) {
                             availableForThisDice = allowedColors;
